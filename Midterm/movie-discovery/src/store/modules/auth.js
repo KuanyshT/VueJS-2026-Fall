@@ -57,7 +57,6 @@ export default {
           throw new Error('Wrong email or password')
         }
         const { password: _, ...safeUser } = user
-        // fake token, generated on the client (no real backend auth)
         const token = btoa(`${user.id}:${Date.now()}`)
         commit('SET_USER', { user: safeUser, token })
         dispatch('lists/loadForUser', null, { root: true })

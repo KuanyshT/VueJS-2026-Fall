@@ -32,7 +32,7 @@ export default {
   name: 'GenreView',
   components: { MovieGrid },
   props: {
-    name: { type: String, required: true } // dynamic param /genre/:name
+    name: { type: String, required: true }
   },
   computed: {
     ...mapState('movies', ['movies', 'loading', 'error']),

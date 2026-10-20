@@ -52,7 +52,6 @@ export default {
   methods: {
     submit() {
       if (!this.isValid) return
-      // send data to parent via custom event
       this.$emit('submit', { rating: this.rating, text: this.text })
     },
     reset() {

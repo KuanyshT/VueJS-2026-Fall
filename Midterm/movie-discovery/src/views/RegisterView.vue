@@ -63,7 +63,6 @@ export default {
         await this.$store.dispatch('auth/register', { ...this.form })
         this.$router.push(this.$route.query.redirect || '/')
       } catch {
-        /* error is shown from the store */
       }
     }
   }

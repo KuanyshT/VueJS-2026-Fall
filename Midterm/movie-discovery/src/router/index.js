@@ -6,13 +6,13 @@ import HomeView from '../views/HomeView.vue'
 const routes = [
   { path: '/', name: 'home', component: HomeView },
   {
-    path: '/movies/:id', // dynamic route
+    path: '/movies/:id', 
     name: 'movie',
     component: () => import('../views/MovieDetailView.vue'),
     props: true
   },
   {
-    path: '/genre/:name', // dynamic route
+    path: '/genre/:name',
     name: 'genre',
     component: () => import('../views/GenreView.vue'),
     props: true
@@ -50,7 +50,6 @@ const router = createRouter({
   scrollBehavior: () => ({ top: 0 })
 })
 
-// Protected routes: only for logged-in users
 router.beforeEach((to) => {
   const isAuth = store.getters['auth/isAuthenticated']
   if (to.meta.requiresAuth && !isAuth) {

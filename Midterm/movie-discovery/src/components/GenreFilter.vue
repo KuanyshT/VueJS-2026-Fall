@@ -25,7 +25,7 @@ export default {
   emits: ['change'],
   methods: {
     select(genre) {
-      this.$emit('change', genre) // custom event to the parent
+      this.$emit('change', genre) 
     }
   }
 }

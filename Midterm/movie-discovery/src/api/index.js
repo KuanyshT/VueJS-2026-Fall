@@ -1,12 +1,10 @@
 import axios from 'axios'
 
-// Mock backend: json-server running on http://localhost:3000 (see db.json)
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000',
   timeout: 8000
 })
 
-// Turn axios errors into readable messages for the UI
 api.interceptors.response.use(
   (response) => response,
   (error) => {

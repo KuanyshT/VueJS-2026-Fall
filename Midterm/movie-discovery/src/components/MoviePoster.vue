@@ -1,5 +1,4 @@
 <template>
-  <!-- generated poster (no external images needed) -->
   <div class="poster" :class="size" :style="posterStyle">
     <span class="poster-year">{{ movie.year }}</span>
     <h3 class="poster-title">{{ movie.title }}</h3>

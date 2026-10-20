@@ -70,7 +70,6 @@ export default {
     }
   },
   watch: {
-    // debounce: wait 300ms after the user stops typing
     search(value) {
       clearTimeout(this.timer)
       this.timer = setTimeout(() => {

@@ -4,7 +4,6 @@ import router from './router'
 import store from './store'
 import './assets/main.css'
 
-// globally registered reusable components
 import BaseLoader from './components/BaseLoader.vue'
 import ErrorMessage from './components/ErrorMessage.vue'
 

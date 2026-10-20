@@ -12,7 +12,6 @@
 </template>
 
 <script>
-// Works with v-model in the parent: <SearchBar v-model="query" />
 export default {
   name: 'SearchBar',
   props: {

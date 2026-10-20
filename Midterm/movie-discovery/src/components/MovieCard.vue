@@ -21,7 +21,6 @@
         >{{ g }}</router-link>
       </div>
 
-      <!-- slot for extra content from parent (e.g. "watched" checkbox) -->
       <slot></slot>
 
       <div class="card-actions">
@@ -53,7 +52,6 @@ export default {
     isFavorite: { type: Boolean, default: false },
     inWatchlist: { type: Boolean, default: false }
   },
-  // custom events: child -> parent
   emits: ['toggle-favorite', 'toggle-watchlist'],
   computed: {
     durationText() {

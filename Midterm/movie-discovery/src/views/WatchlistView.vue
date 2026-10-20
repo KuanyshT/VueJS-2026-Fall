@@ -31,7 +31,6 @@
         @toggle-favorite="(id) => $store.dispatch('lists/toggleFavorite', id)"
         @toggle-watchlist="(id) => $store.dispatch('lists/toggleWatchlist', id)"
       >
-        <!-- content passed into MovieCard slot -->
         <label class="watched">
           <input
             type="checkbox"

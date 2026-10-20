@@ -91,7 +91,7 @@ export default {
   name: 'MovieDetailView',
   components: { MoviePoster, RatingBadge, ReviewForm, MovieGrid },
   props: {
-    id: { type: String, required: true } // from dynamic route /movies/:id
+    id: { type: String, required: true } 
   },
   data() {
     return { sending: false, reviewError: '' }
@@ -118,7 +118,6 @@ export default {
     }
   },
   watch: {
-    // same component is reused when going /movies/1 -> /movies/3, so watch the param
     id() {
       this.load()
     },

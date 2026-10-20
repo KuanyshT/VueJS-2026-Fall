@@ -31,7 +31,6 @@ export default {
     ...mapGetters('auth', ['isAuthenticated'])
   },
   methods: {
-    // handlers of child custom events
     onFavorite(id) {
       if (!this.requireAuth()) return
       this.$store.dispatch('lists/toggleFavorite', id)

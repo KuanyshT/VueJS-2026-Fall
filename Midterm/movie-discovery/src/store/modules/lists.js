@@ -5,7 +5,7 @@ function load(userId) {
   try {
     const saved = JSON.parse(localStorage.getItem(key(userId)))
     if (saved) return saved
-  } catch { /* ignore broken data */ }
+  } catch { }
   return { favorites: [], watchlist: [] }
 }
 
@@ -13,8 +13,8 @@ export default {
   namespaced: true,
 
   state: () => ({
-    favorites: [], // array of movie ids
-    watchlist: [] // array of { id, watched: boolean }
+    favorites: [], 
+    watchlist: [] 
   }),
 
   getters: {

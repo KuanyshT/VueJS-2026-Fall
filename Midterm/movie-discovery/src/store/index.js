@@ -7,7 +7,6 @@ const store = createStore({
   modules: { auth, movies, lists }
 })
 
-// load favorites/watchlist of the logged-in user on start
 store.dispatch('lists/loadForUser')
 
 export default store
