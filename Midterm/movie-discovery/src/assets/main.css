@@ -1,0 +1,91 @@
+:root {
+  --bg: #0e0d0c;
+  --surface: #181614;
+  --surface-2: #23201d;
+  --border: #2f2b27;
+  --text: #f3eee6;
+  --muted: #9a9187;
+  --accent: #f5a524;
+  --danger: #ef5b5b;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+.container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+.page { padding-bottom: 60px; min-height: calc(100vh - 140px); }
+
+input, select, textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font: inherit;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+textarea { resize: vertical; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #111;
+  border: 1px solid var(--accent);
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+.btn:hover { filter: brightness(1.08); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--border); }
+.btn-ghost:hover { border-color: var(--accent); }
+
+.tag {
+  font-size: 12px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+.tag:hover { color: var(--accent); border-color: var(--accent); }
+
+/* auth pages */
+.auth-page { display: flex; justify-content: center; padding-top: 60px; }
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth-card h1 { font-family: 'Bebas Neue', sans-serif; font-size: 48px; margin: 0; line-height: 1; }
+.auth-card .sub { color: var(--muted); margin: 0; font-size: 14px; }
+.auth-card label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--muted); }
+.auth-card label.check { flex-direction: row; align-items: center; }
+.auth-card code { color: var(--accent); }
+.form-error { color: var(--danger); margin: 0; font-size: 14px; }
+.form-error.list { padding-left: 18px; }
+.switch { text-align: center; color: var(--muted); margin: 0; font-size: 14px; }
+
+.footer { color: var(--muted); font-size: 13px; padding: 24px 20px; border-top: 1px solid var(--border); }
