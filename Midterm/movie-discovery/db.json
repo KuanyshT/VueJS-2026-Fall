@@ -1,0 +1,38 @@
+{
+  "genres": [
+    { "id": 1, "name": "Drama" },
+    { "id": 2, "name": "Sci-Fi" },
+    { "id": 3, "name": "Crime" },
+    { "id": 4, "name": "Animation" },
+    { "id": 5, "name": "Thriller" },
+    { "id": 6, "name": "Adventure" },
+    { "id": 7, "name": "Comedy" },
+    { "id": 8, "name": "Action" }
+  ],
+  "movies": [
+    { "id": 1, "title": "Interstellar", "year": 2014, "genres": ["Sci-Fi", "Drama", "Adventure"], "rating": 8.7, "duration": 169, "director": "Christopher Nolan", "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"], "description": "A team of astronauts travels through a wormhole near Saturn to find a new home for humanity while time on Earth runs out.", "hue": 210 },
+    { "id": 2, "title": "The Shawshank Redemption", "year": 1994, "genres": ["Drama", "Crime"], "rating": 9.3, "duration": 142, "director": "Frank Darabont", "cast": ["Tim Robbins", "Morgan Freeman"], "description": "A banker sentenced to life in prison builds an unlikely friendship and quietly plans for a future beyond the walls.", "hue": 30 },
+    { "id": 3, "title": "Inception", "year": 2010, "genres": ["Sci-Fi", "Action", "Thriller"], "rating": 8.8, "duration": 148, "director": "Christopher Nolan", "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"], "description": "A thief who steals secrets from dreams is offered one last job: planting an idea in someone's mind.", "hue": 260 },
+    { "id": 4, "title": "Spirited Away", "year": 2001, "genres": ["Animation", "Adventure"], "rating": 8.6, "duration": 125, "director": "Hayao Miyazaki", "cast": ["Rumi Hiiragi", "Miyu Irino"], "description": "A ten-year-old girl wanders into a world of spirits and must work in a bathhouse to free her parents.", "hue": 150 },
+    { "id": 5, "title": "Parasite", "year": 2019, "genres": ["Thriller", "Drama", "Comedy"], "rating": 8.5, "duration": 132, "director": "Bong Joon-ho", "cast": ["Song Kang-ho", "Choi Woo-shik", "Park So-dam"], "description": "A poor family schemes its way into the household of a wealthy one, until things spiral out of control.", "hue": 90 },
+    { "id": 6, "title": "The Dark Knight", "year": 2008, "genres": ["Action", "Crime", "Drama"], "rating": 9.0, "duration": 152, "director": "Christopher Nolan", "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"], "description": "Batman faces the Joker, a criminal mastermind who pushes Gotham and its heroes to their breaking point.", "hue": 220 },
+    { "id": 7, "title": "Pulp Fiction", "year": 1994, "genres": ["Crime", "Comedy"], "rating": 8.9, "duration": 154, "director": "Quentin Tarantino", "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"], "description": "Several stories of Los Angeles criminals intertwine in a non-linear tale of violence and redemption.", "hue": 0 },
+    { "id": 8, "title": "Dune: Part Two", "year": 2024, "genres": ["Sci-Fi", "Adventure", "Action"], "rating": 8.5, "duration": 166, "director": "Denis Villeneuve", "cast": ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson"], "description": "Paul Atreides unites with the Fremen to seek revenge while trying to prevent a terrible future he foresees.", "hue": 35 },
+    { "id": 9, "title": "Coco", "year": 2017, "genres": ["Animation", "Comedy", "Adventure"], "rating": 8.4, "duration": 105, "director": "Lee Unkrich", "cast": ["Anthony Gonzalez", "Gael García Bernal"], "description": "An aspiring young musician crosses into the Land of the Dead to uncover his family's history.", "hue": 320 },
+    { "id": 10, "title": "Se7en", "year": 1995, "genres": ["Crime", "Thriller"], "rating": 8.6, "duration": 127, "director": "David Fincher", "cast": ["Brad Pitt", "Morgan Freeman"], "description": "Two detectives hunt a serial killer whose crimes are modeled on the seven deadly sins.", "hue": 60 },
+    { "id": 11, "title": "Mad Max: Fury Road", "year": 2015, "genres": ["Action", "Adventure", "Sci-Fi"], "rating": 8.1, "duration": 120, "director": "George Miller", "cast": ["Tom Hardy", "Charlize Theron"], "description": "In a desert wasteland, a drifter and a rebel warrior flee a tyrant in a relentless high-speed chase.", "hue": 20 },
+    { "id": 12, "title": "The Grand Budapest Hotel", "year": 2014, "genres": ["Comedy", "Adventure", "Drama"], "rating": 8.1, "duration": 99, "director": "Wes Anderson", "cast": ["Ralph Fiennes", "Tony Revolori"], "description": "A legendary concierge and his lobby boy get caught up in the theft of a priceless painting.", "hue": 340 },
+    { "id": 13, "title": "Whiplash", "year": 2014, "genres": ["Drama"], "rating": 8.5, "duration": 106, "director": "Damien Chazelle", "cast": ["Miles Teller", "J.K. Simmons"], "description": "A young drummer at a music conservatory is pushed to his limits by a ruthless instructor.", "hue": 45 },
+    { "id": 14, "title": "Blade Runner 2049", "year": 2017, "genres": ["Sci-Fi", "Thriller", "Drama"], "rating": 8.0, "duration": 164, "director": "Denis Villeneuve", "cast": ["Ryan Gosling", "Harrison Ford", "Ana de Armas"], "description": "A replicant officer uncovers a long-buried secret that could plunge society into chaos.", "hue": 190 },
+    { "id": 15, "title": "Toy Story", "year": 1995, "genres": ["Animation", "Comedy", "Adventure"], "rating": 8.3, "duration": 81, "director": "John Lasseter", "cast": ["Tom Hanks", "Tim Allen"], "description": "A cowboy doll feels threatened when a flashy space ranger toy becomes his owner's new favorite.", "hue": 110 },
+    { "id": 16, "title": "Joker", "year": 2019, "genres": ["Crime", "Drama", "Thriller"], "rating": 8.4, "duration": 122, "director": "Todd Phillips", "cast": ["Joaquin Phoenix", "Robert De Niro"], "description": "A failed comedian in Gotham City slowly descends into madness and becomes a symbol of chaos.", "hue": 130 }
+  ],
+  "reviews": [
+    { "id": 1, "movieId": 1, "author": "Aruzhan", "rating": 10, "text": "The docking scene still gives me goosebumps.", "createdAt": "2026-10-01T10:00:00.000Z" },
+    { "id": 2, "movieId": 1, "author": "Daniyar", "rating": 9, "text": "Great soundtrack, heavy science, worth rewatching.", "createdAt": "2026-10-03T14:20:00.000Z" },
+    { "id": 3, "movieId": 5, "author": "Aigerim", "rating": 9, "text": "Funny and terrifying at the same time.", "createdAt": "2026-10-05T19:45:00.000Z" }
+  ],
+  "users": [
+    { "id": 1, "name": "Demo User", "email": "demo@mail.com", "password": "123456" }
+  ]
+}
