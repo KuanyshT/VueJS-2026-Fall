@@ -9,6 +9,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterLink to="/recipes">Рецепты йо</RouterLink>
   <p></p>
   <RouterLink to="/login">Логинься да</RouterLink>
+  <p></p>
+  <RouterLink to="/recipes/new">Cоздать свой шедевр</RouterLink>
   <RouterView />
 
 </template>
