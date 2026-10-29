@@ -1,7 +1,7 @@
 import axios from "axios";  
 
 const http = axios.create({
-    baseURL:  'https://dummyjson.comч',
+    baseURL:  'https://dummyjson.com',
 })
 
 export default http

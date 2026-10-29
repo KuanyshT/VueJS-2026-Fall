@@ -1,8 +1,9 @@
 <script setup>
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { ref } from 'vue';
 import http from '@/api/http'
 
+const router = useRouter()
 const route = useRoute()
 const recipe = ref(null)
 const loading = ref(true)
@@ -18,6 +19,16 @@ http.get(`/recipes/${route.params.id}`)
     .finally(() => {
         loading.value = false
     })
+
+function deleteRecipe(){
+    http.delete(`/recipes/${recipe.value.id}`)
+        .then(() => {
+            router.push('/recipes')
+        })
+        .catch ((err) => {
+            error.value = err.message
+        })
+}
 </script>
 
 <template>
@@ -39,6 +50,8 @@ http.get(`/recipes/${route.params.id}`)
         <ol>
             <li v-for="step in recipe.instructions" :key="step">{{ step }}</li>
         </ol>
+
+        <button @click="deleteRecipe">Снести этот рецепт</button>
     </div>
 
     <p v-else>Емааа нет рецепта, ладно все равно не стал бы готовить</p>
