@@ -26,7 +26,11 @@ http.get('/recipes')
 
     <ul v-else>
     <li v-for="recipe in recipes" :key="recipe.id">
-      {{ recipe.name }}
+      <p><RouterLink :to="{ name: 'recipe-details', params: {id: recipe.id}}">Название: {{ recipe.name }}</RouterLink></p>
+      <img :src="recipe.image" :alt="recipe.name">
+      <p>Кухня: {{ recipe.cuisine }}</p>
+      <p>Скок времени убьешь: {{ recipe.prepTimeMinutes + recipe.cookTimeMinutes }} минут</p>
+      <p>Рейтинг:  {{ recipe.rating }}</p>
     </li>
   </ul>
 </template>
